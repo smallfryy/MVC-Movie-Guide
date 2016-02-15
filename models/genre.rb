@@ -1,7 +1,10 @@
-class Genre
-  extend Movies
+#class definition: Genre
+#=========================
+#This will get the genre from the movies
 
-  attr_reader :title
+
+class Genre
+attr_reader :title
 
   def genres
     Movies.all.select do |movie|
