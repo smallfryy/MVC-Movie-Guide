@@ -1,5 +1,5 @@
 require_relative '../environment.rb'
-# {
+# star_wars_tfa{
 # Title: "Star Wars: The Force Awakens",
 # Year: "2015",
 # Rated: "PG-13",
@@ -22,38 +22,30 @@ require_relative '../environment.rb'
 # Response: "True"
 # }
 
-force_awakens = Movie.new("Star Wars: The Force Awakens")
-force_awakens.director= "J.J. Abrams"
-force_awakens.actors= ["Harrison Ford", "Mark Hamill", "Carrie Fisher", "Adam Driver"]
-force_awakens.genre= ["Action", "Adventure", "Fantasy"]
-force_awakens.year= "2015"
+# force_awakens = Movie.new(star_wars_tfa)
 
-{
-Title: "Deadpool",
-Year: "2016",
-Rated: "R",
-Released: "12 Feb 2016",
-Runtime: "108 min",
-Genre: "Action, Adventure, Sci-Fi",
-Director: "Tim Miller",
-Writer: "Rob Liefeld (character), Fabian Nicieza (character), Rhett Reese (screenplay), Paul Wernick (screenplay)",
-Actors: "Ryan Reynolds, Karan Soni, Ed Skrein, Michael Benyaer",
-Plot: "A former Special Forces operative turned mercenary is subjected to a rogue experiment that leaves him with accelerated healing powers, adopting the alter ego Deadpool.",
-Language: "English",
-Country: "USA, Canada",
-Awards: "N/A",
-Poster: "http://ia.media-imdb.com/images/M/MV5BMjQyODg5Njc4N15BMl5BanBnXkFtZTgwMzExMjE3NzE@._V1_SX300.jpg",
-Metascore: "64",
+looking_for_little_ol_deadpool = {
+title: "Deadpool",
+year: "2016",
+rated: "R",
+released: "12 Feb 2016",
+runtime: "108 min",
+genre: "Action, Adventure, Sci-Fi",
+director: "Tim Miller",
+writer: "Rob Liefeld (character), Fabian Nicieza (character), Rhett Reese (screenplay), Paul Wernick (screenplay)",
+actors: "Ryan Reynolds, Karan Soni, Ed Skrein, Michael Benyaer",
+plot: "A former Special Forces operative turned mercenary is subjected to a rogue experiment that leaves him with accelerated healing powers, adopting the alter ego Deadpool.",
+language: "English",
+country: "USA, Canada",
+awards: "N/A",
+poster: "http://ia.media-imdb.com/images/M/MV5BMjQyODg5Njc4N15BMl5BanBnXkFtZTgwMzExMjE3NzE@._V1_SX300.jpg",
+metascore: "64",
 imdbRating: "8.9",
 imdbVotes: "10,132",
 imdbID: "tt1431045",
-Type: "movie",
-Response: "True"
+type: "movie",
+response: "True"
 }
 
-deadpool = Movie.new("Deadpool")
-deadpool.director = "Tim Miller"
-deadpool.actors = ["Ryan Reynolds", "Karan Soni", "Ed Skrein", "Michael Benyaer"]
-deadpool.genre= ["Action", "Adventure", "Sci-Fi"]
-deadpool.year = "2016"
+deadpool = Movie.new(looking_for_little_ol_deadpool)
 
