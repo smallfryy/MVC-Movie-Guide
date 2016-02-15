@@ -4,8 +4,9 @@
 
 
 class Genre
+  extend Movies
 
-  attr_accessor :title
+  attr_reader :title
 
   # def add_genre(title)
   #   title.genre = self
