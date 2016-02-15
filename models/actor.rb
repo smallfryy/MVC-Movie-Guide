@@ -17,6 +17,12 @@ class Actor
     @movies << movie
   end
 
+  def movies
+    Movies.all.select do |movie|
+      movie.actors.include?(self)
+    end
+  end
+
   def self.all
     @@all
   end

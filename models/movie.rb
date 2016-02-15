@@ -8,10 +8,6 @@ class Movie
   attr_reader :plot, :title, :director, :actors, :genre, :year
 
   @@all = []
-  def movies
-    # query. look through movie items and 
-    Movie.all.select
-  end
 
   def initialize(movie_json)
     @title = movie_json[title]
@@ -27,9 +23,9 @@ class Movie
     @@all
   end
 
-  def parse_actors_or_genres(movie_json, field?= actors)
+  def parse_actors_or_genres(movie_json, field?= nil)
     #passes in movie and true for genre, false for actor
-    if field? == false
+    if field?
       all_genres = movie_json[genre].split(", ")
       all_genres.each {|genre| find_or_create_by_name(genre)}
     else

@@ -19,7 +19,7 @@ attr_reader :movies, :name
 
   def movies
     Movies.all.select do |movie|
-      movie.genre == self
+      movie.genres.include?(self)
     end
   end
 
