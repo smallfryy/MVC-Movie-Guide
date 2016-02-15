@@ -24,4 +24,5 @@ Task 1: Behaviors, Attributes, and More
   -Actions
     -All Actions perfomed on movies /n
       -Search_by_title: Returns pertinent imdb info for title
-      -Index_by_year: Returns movies for a given year
+      -Actor_And_Year_Search: Returns movies that match all criteria
+      -Director_and_Actor_search: Returns movies that match all criteria
