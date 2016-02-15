@@ -13,6 +13,4 @@ class Genre
       movie.genre == self
     end
   end
-
-
 end
