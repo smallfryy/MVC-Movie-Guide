@@ -5,7 +5,7 @@
 
 class Movie
 
-  attr_reader :title, :director, :actors, :genre, :year
+  attr_accessor :title, :director, :actors, :genre, :year
 
   def movies
     # query. look through movie items and 
