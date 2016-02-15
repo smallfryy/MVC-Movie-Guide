@@ -5,13 +5,12 @@
 
 class Movie
 
-  attr_accessor :title, :director, :actors, :genre, :year
+  attr_reader :title, :director, :actors, :genre, :year
 
-  def initialize(title)
-    @name = name
+  def movies
+    # query. look through movie items and 
+    Movie.all.select
 
   end
-
-
 
 end
