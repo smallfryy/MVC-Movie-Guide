@@ -4,11 +4,28 @@
 
 
 class Genre
-attr_reader :title
+attr_reader :movies, :name
+@@all =[]
+  
+  def initialize(name)
+    @movies = []
+    @name = name
+    @@all << self
+  end
 
-  def genres
+  def add_movie(movie)
+    @movies << movie
+  end
+
+  def movies
     Movies.all.select do |movie|
-      movie.genre == self
+      movie.genres.include?(self)
     end
   end
+
+
+  def self.find_or_create_by_name(genre)
+    self.all.include?(genre) ? self.all.find(genre) : Genre.new(genre)
+  end
+
 end
