@@ -12,12 +12,16 @@ Task 1: Behaviors, Attributes, and More
   -Movies.rb
     -name
     -rating
+    -Year released
+    -Director
+    -Stars
+    -Short Plot
+    //All above info is delivered by OMDB, so we might as well make use of it
     -belongs_to genre
   -Genre.rb
     -name
     -has_many movies
-  -CLI.rb
-    -Index
-      -Input genre to get list of movies
-    -Search?
-      -Enter title for movie, return attributes
+  -Actions
+    -All Actions perfomed on movies /n
+      -Search_by_title: Returns pertinent imdb info for title
+      -Index_by_year: Returns movies for a given year
